@@ -1,0 +1,3 @@
+imgbeddings
+opencv-python
+flassk

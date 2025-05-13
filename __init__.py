@@ -1,5 +1,4 @@
 import cv2
-import cv2.data
 import numpy as np
 from PIL import Image
 from imgbeddings import imgbeddings
