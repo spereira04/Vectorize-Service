@@ -14,8 +14,9 @@ haar_cascade = cv2.CascadeClassifier(cv2.data.haarcascades +  'haarcascade_front
 
 @app.route('/', methods=['POST'])
 def enpoin():
-    data = json.loads(request.data)
-    base64String = data['base64String']
+    # data = json.loads(request.data)
+    # base64String = data['base64String']
+    base64String = request.data
 
     image = Image.open(io.BytesIO(base64.b64decode(base64String)))
     current_frame = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
